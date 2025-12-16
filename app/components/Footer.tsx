@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Left Section - Company Info & Logo */}
           <div className="footer-left">
             <div className="footer-logo">
-              <Logo variant="full" link={true} />
+              <Logo variant="footer" link={true} />
             </div>
             <p className="footer-description">
               Profesjonalna wulkanizacja w Sycowie. Oferujemy kompleksowe usługi wymiany i naprawy opon.
