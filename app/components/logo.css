@@ -1,0 +1,57 @@
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  height: 100%;
+}
+
+.logo-image {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Navbar version - full height of navbar (80px) */
+nav .logo-wrapper {
+  margin-left: 60px;
+}
+
+nav .logo-image {
+  height: 80px;
+
+}
+
+/* Footer version - full but smaller */
+footer .logo-wrapper {
+  margin-left: 0;
+}
+
+footer .logo-image {
+  max-height: 80px;
+  height: auto;
+  
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav .logo-wrapper {
+    margin-left: 20px;
+  }
+
+  nav .logo-image {
+    height: 60px;
+  }
+
+  footer .logo-image {
+    max-height: 60px;
+  }
+}
+

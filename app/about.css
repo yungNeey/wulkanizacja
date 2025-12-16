@@ -1,0 +1,268 @@
+/* About Hero Section */
+.about-hero {
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.about-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #000;
+  margin: 16px 0 0 0;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.badge-icon {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* About Main Section */
+.about-main {
+  padding: 120px 0;
+  background: #fff;
+}
+
+.about-main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-main-image {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+.about-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: grayscale(100%);
+}
+
+.about-main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-main-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  margin: 0;
+}
+
+.about-main-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin: 0;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+  padding: 120px 0;
+  background: #f5f5f5;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+.mission-vision-card {
+  padding: 48px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+.mission-vision-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 24px 0;
+}
+
+.mission-vision-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  margin: 0 0 32px 0;
+}
+
+.mission-vision-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mission-vision-list li {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  padding-left: 24px;
+  position: relative;
+}
+
+.mission-vision-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #000;
+}
+
+/* Values Section */
+.values-section {
+  padding: 120px 0;
+  background: #fff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #000;
+  margin: 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.value-card {
+  padding: 40px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  border-color: #000;
+  transform: translateY(-4px);
+}
+
+.value-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.value-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 16px 0;
+}
+
+.value-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-main-content {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-main-image {
+    order: -1;
+    height: 500px;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 64px 0 48px;
+  }
+
+  .about-hero-title {
+    font-size: 36px;
+  }
+
+  .about-main {
+    padding: 64px 0;
+  }
+
+  .about-main-title {
+    font-size: 36px;
+  }
+
+  .mission-vision {
+    padding: 64px 0;
+  }
+
+  .mission-vision-card {
+    padding: 32px;
+  }
+
+  .values-section {
+    padding: 64px 0;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .value-card {
+    padding: 32px;
+  }
+}
+
